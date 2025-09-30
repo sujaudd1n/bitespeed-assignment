@@ -44,3 +44,16 @@ curl -X POST http://localhost:3000/identify \
     "phoneNumber": "7179171"
 }'
 ```
+
+## Hosting
+
+The app is hosted on <http://bitespeed-assignment.ap-1.evennode.com>
+
+```bash
+curl -X POST http://bitespeed-assignment.ap-1.evennode.com/identify \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email":"georsadfge@hillvalley.edu",
+    "phoneNumber": "717132371"
+}'
+```
