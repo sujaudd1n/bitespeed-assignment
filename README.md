@@ -15,3 +15,32 @@ npm install
 ```bash
 npm start
 ```
+
+## POST endpoint (/identify)
+
+```bash
+curl -X POST http://localhost:3000/identify \
+  -H "Content-Type: application/json" \
+  -d \
+'{
+    "email":"george@hillvalley.edu",
+    "phoneNumber": "717171"
+}'
+
+curl -X POST http://localhost:3000/identify \
+  -H "Content-Type: application/json" \
+  -d \
+'{
+    "email":"george@hillva5lley.edu",
+    "phoneNumber": "717171"
+}'
+
+
+curl -X POST http://localhost:3000/identify \
+  -H "Content-Type: application/json" \
+  -d \
+'{
+    "email":"george@hillvalley.edu",
+    "phoneNumber": "7179171"
+}'
+```
